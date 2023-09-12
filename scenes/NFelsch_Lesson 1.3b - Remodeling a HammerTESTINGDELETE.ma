@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
-//Name: NFelsch_Lesson 1.3b - Remodeling a Hammer.ma
-//Last modified: Mon, Sep 11, 2023 12:03:16 PM
+//Name: NFelsch_Lesson 1.3b - Remodeling a HammerTESTINGDELETE.ma
+//Last modified: Mon, Sep 11, 2023 08:36:45 PM
 //Codeset: UTF-8
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.1.1";
@@ -10,7 +10,7 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202304191415-7fa20164c6";
 fileInfo "osv" "Mac OS X 13.5.2";
-fileInfo "UUID" "E71E2476-1A43-EC75-DEB0-499F07D21464";
+fileInfo "UUID" "2DBD31E0-5543-DCD4-1D7D-328BFD8C82C7";
 createNode transform -s -n "persp";
 	rename -uid "E243FF8F-834E-4CC0-505A-1E9E67D7E9AE";
 	setAttr ".v" no;
@@ -108,8 +108,8 @@ createNode camera -n "perspShape2" -p "persp2";
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -n "persp3";
 	rename -uid "20FBEA3F-824E-E6D4-8F1B-08B1D91804AE";
-	setAttr ".t" -type "double3" -14.608317072687587 12.790869026800927 13.246013054276723 ;
-	setAttr ".r" -type "double3" -21.938352729614408 -47.800000000000921 0 ;
+	setAttr ".t" -type "double3" -13.85478529589742 11.112925847799634 14.857438235429683 ;
+	setAttr ".r" -type "double3" -17.138352729614809 -43.000000000001116 0 ;
 createNode camera -n "perspShape3" -p "persp3";
 	rename -uid "B718AE9B-414B-910C-C268-719640EF65A0";
 	setAttr -k off ".v";
@@ -530,20 +530,20 @@ createNode mesh -n "polySurfaceShape1" -p "pCube3";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "F3982AD2-344D-150F-3F48-80B2B7990C06";
+	rename -uid "50FF5462-A846-42EB-5022-B19715B94929";
 	setAttr -s 3 ".lnk";
 	setAttr -s 3 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "2C648435-BA44-2962-CD8E-24B525A4947E";
+	rename -uid "7FC9AEBB-3348-3671-70FE-5BB00E24F1C1";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "401469F0-014F-AF7A-3093-DEA8BA5D859E";
+	rename -uid "51ABFC18-384D-0244-E3F6-3580629570E9";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "AD60C7DE-C74A-55D5-F877-0FA4C01DD0A3";
+	rename -uid "4AE4F690-0643-1DA3-6F1D-61B42FB8E27F";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "D693245B-CC46-2562-F65C-A3B7CA7B8A62";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "C812A74C-0F41-CEBA-BEF1-949DD58F89FA";
+	rename -uid "75FBA636-E941-D365-BC38-81B9D534A56B";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "0691BAA0-6943-8529-C22A-6CA5F95E5B05";
 	setAttr ".g" yes;
@@ -872,7 +872,7 @@ createNode polyFlipUV -n "polyFlipUV4";
 createNode polyTweakUV -n "polyTweakUV5";
 	rename -uid "62836B9A-9D4A-4AE2-6557-57B7557F001B";
 	setAttr ".uopa" yes;
-	setAttr -s 19 ".uvtk";
+	setAttr -s 18 ".uvtk";
 	setAttr ".uvtk[62]" -type "float2" 0.0018999819 0.29179874 ;
 	setAttr ".uvtk[63]" -type "float2" 0.021399401 0.28121343 ;
 	setAttr ".uvtk[64]" -type "float2" 0.001635069 0.26198274 ;
@@ -898,7 +898,7 @@ createNode polyMapSewMove -n "polyMapSewMove1";
 createNode polyTweakUV -n "polyTweakUV6";
 	rename -uid "B68633CE-1C4F-46EF-5BA4-FFB10EF5D1B3";
 	setAttr ".uopa" yes;
-	setAttr -s 10 ".uvtk";
+	setAttr -s 9 ".uvtk";
 	setAttr ".uvtk[66]" -type "float2" 0.55436432 0.56358218 ;
 	setAttr ".uvtk[67]" -type "float2" 0.55924791 0.54540789 ;
 	setAttr ".uvtk[68]" -type "float2" 0.54710859 0.53130925 ;
@@ -1058,4 +1058,4 @@ connectAttr "polyMapSewMove2.out" "polyTweakUV7.ip";
 connectAttr "lambert2SG.pa" ":renderPartition.st" -na;
 connectAttr "Hsmmer.msg" ":defaultShaderList1.s" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
-// End of NFelsch_Lesson 1.3b - Remodeling a Hammer.ma
+// End of NFelsch_Lesson 1.3b - Remodeling a HammerTESTINGDELETE.ma
